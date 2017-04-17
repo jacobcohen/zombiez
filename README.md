@@ -26,10 +26,10 @@ my-app/
     containers/     <-- containers to hold props for react        
                         components
     gameStates/      <-- Holds all game states for Phaser
-                        will need a preload, a boot, and a game at the minimum
+                        needs a preload, a boot, and a game at the minimum
     prefabs/        <-- This is where we create 'classes' for
                         enemies/objects we will use in our phaser game and initiate with sprites!
-    reducers/       <-- This is where we will create client
+    reducers/       <-- This is where we create client
                         reducers to validate and determine game states from the server
 
   assets/           <-- All Game assets go in here
@@ -38,8 +38,7 @@ my-app/
     favicon.ico
 
   server/
-    index.js        <--- We will probably need to implement server
-                         reducers in here
+    index.js      
   phaser.min.js
 ```
 
@@ -49,5 +48,3 @@ For the project to build, **these files must exist with exact filenames**:
 * `src/index.js` is the JavaScript Webpack entry point.
 
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
